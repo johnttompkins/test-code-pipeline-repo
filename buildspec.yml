@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - touch file.txt
+      - mkdir -p java/opt/
+      - cp file.txt java/opt/file.txt
+      - zip -r cake.zip java
