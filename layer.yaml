@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: Creates Lambda Layer
+Description: Creates Lambda Layerr
 
 # Parameters:
 #   LayerPackageS3Bucket:
