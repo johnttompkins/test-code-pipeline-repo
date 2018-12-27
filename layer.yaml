@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Creates Lambda Layer
+
+# Parameters:
+#   LayerPackageS3Bucket:
+#     Description: The object name of the layer package .zip in S3
+#     Type: String
+#   LayerPackageS3ObjectKey:
+#     Description: The object name of the layer package .zip in S3
+#     Type: String
+
+Resources:
+  LambdaWrapperLayer:
+  Type: AWS::Lambda::LayerVersion
+  Properties:
+    CompatibleRuntimes:
+      - java8
+    Content:
+      S3Bucket: jotompkibucket
+      S3Key: layer.zip
+    Description: "Lambda Layer"
+    LayerName: "LambdaLayer"
