@@ -6,10 +6,6 @@ phases:
       - mkdir -p java/opt/
       - cp file.txt java/opt/file.txt
       - zip -r cake.zip java
-secondary-artifacts:
-  template:
-    files:
-      - layer.yaml
-  layer:
+artifacts:
     files:
       - cake.zip
