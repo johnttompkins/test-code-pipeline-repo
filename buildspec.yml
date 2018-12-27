@@ -7,6 +7,10 @@ phases:
       - cp file.txt java/opt/file.txt
       - zip -r cake.zip java
 artifacts:
-  files:
-    - cake.zip
-    - layer.yaml
+  secondary-artifacts:
+    layer:
+      files:
+        - cake.zip
+    template:
+      files:
+        - layer.yaml
