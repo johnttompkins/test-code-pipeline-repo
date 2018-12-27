@@ -12,6 +12,7 @@ Parameters:
 Resources:
   LambdaWrapperLayer:
     Type: AWS::Lambda::LayerVersion
+    DeletionPolicy: Retain
     Properties:
       CompatibleRuntimes:
         - java8
