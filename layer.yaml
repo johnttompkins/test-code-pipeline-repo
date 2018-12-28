@@ -21,3 +21,7 @@ Resources:
         S3Key: !Ref TestKey
       Description: "Lambda Layer"
       LayerName: "LambdaLayer"
+
+Outputs:
+  LayerArn:
+    Value: !GetAtt LambdaLayer.Arn
